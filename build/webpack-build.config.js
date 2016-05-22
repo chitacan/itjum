@@ -1,5 +1,6 @@
 var webpack = require('webpack');
 var html = require('html-webpack-plugin');
+var pkg = require('../package');
 
 module.exports = {
   entry: './lib/client/index.js',
@@ -59,6 +60,9 @@ module.exports = {
     failOnError: false
   },
   plugins: [
+    new webpack.DefinePlugin({
+      __VERSION__: JSON.stringify(`${pkg.version}`)
+    }),
     new webpack.optimize.UglifyJsPlugin({
       compress: {
         warnings: false
