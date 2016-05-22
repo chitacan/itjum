@@ -1,0 +1,63 @@
+{
+  "name": "itjum",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "DEBUG=*,-babel node lib/watcher",
+    "start-client": "webpack-dev-server --config build/webpack-dev-server.config.js --hot --inline --progress",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rimraf dist && webpack --config build/webpack-build.config.js --progress --colors",
+    "lint": "nodemon --watch lib --exec eslint lib/**"
+  },
+  "bin": {
+    "itjum": "./bin/itjum"
+  },
+  "author": "chitacan",
+  "license": "ISC",
+  "dependencies": {
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "babel-register": "^6.9.0",
+    "chokidar": "^1.5.0",
+    "commander": "^2.9.0",
+    "configstore": "^2.0.0",
+    "debug": "^2.2.0",
+    "firebase": "^3.0.2",
+    "glob": "^7.0.3",
+    "lodash": "^4.12.0",
+    "rx": "^4.1.0",
+    "xlsx": "^0.8.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.9.0",
+    "babel-eslint": "^6.0.4",
+    "babel-loader": "^6.2.4",
+    "babel-preset-react": "^6.5.0",
+    "bootstrap-sass": "^3.3.6",
+    "css-loader": "^0.23.1",
+    "eslint": "^2.10.2",
+    "eslint-config-google": "^0.5.0",
+    "eslint-loader": "^1.3.0",
+    "eslint-plugin-react": "^5.1.1",
+    "file-loader": "^0.8.5",
+    "firebase-util": "^0.2.5",
+    "html-webpack-plugin": "^2.17.0",
+    "image-webpack-loader": "^1.8.0",
+    "moment": "^2.13.0",
+    "node-sass": "^3.7.0",
+    "nodemon": "^1.9.2",
+    "react": "^15.1.0",
+    "react-bootstrap": "^0.29.4",
+    "react-dom": "^15.1.0",
+    "react-google-maps": "^4.10.1",
+    "react-hot-loader": "^1.3.0",
+    "react-router": "^2.4.1",
+    "rimraf": "^2.5.2",
+    "sass-loader": "^3.2.0",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  }
+}

@@ -1,0 +1,66 @@
+$icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import "~bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+
+html, body {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+body {
+  padding-top: 70px;
+  background: #ecf0f1;
+  color: #4d4d4d;
+  font-size: 12px;
+}
+.card {
+  padding: 10px;
+  background: #fff;
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.2);
+}
+
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 15px;
+}
+.btn-circle.btn-lg {
+  width: 50px;
+  height: 50px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 25px;
+}
+.btn-circle.btn-xl {
+  width: 70px;
+  height: 70px;
+  padding: 10px 16px;
+  font-size: 24px;
+  line-height: 1.33;
+  border-radius: 35px;
+}
+
+.truncate {
+  max-width: 140px;
+  min-width: 140px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@keyframes highlight {
+  0% {
+    background: rgba(254,195,36,.5);
+  }
+  100% {
+    background: none;
+  }
+}
+
+.highlight {
+  animation: highlight 2s;
+}
